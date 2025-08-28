@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Welcome \u2014 How This Blog Works",
+    "date": "2025-08-20",
+    "tags": [
+      "meta",
+      "guide"
+    ],
+    "excerpt": "A quick tour of the Patreon\u2011style blog you can deploy on GitHub Pages. Write long\u2011reads in Markdown, get TOC, search, and a clean layout.",
+    "cover": "assets/cover-illustration.svg"
+  },
+  {
+    "slug": "longread-sample",
+    "title": "A Sample Longread with Headings, Images, and Quotes",
+    "date": "2025-08-18",
+    "tags": [
+      "writing",
+      "sample"
+    ],
+    "excerpt": "See how a full long\u2011form article renders: headings, images, code blocks, and more.",
+    "cover": ""
+  }
+]

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TurtleMe — Fan Blog</title>
+  <meta name="description" content="Long‑form posts, updates, and extras in a clean Patreon‑inspired layout." />
+  <link rel="icon" href="assets/logo.svg">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@0.284.0/font/lucide.css">
+  <!-- Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    /* Subtle gradient hero background */
+    .hero-bg {
+      background: radial-gradient(1200px 600px at 70% 40%, rgba(124, 58, 237, 0.35), rgba(2,6,23,0.85)),
+                  linear-gradient(180deg, #0b1220 0%, #0b1220 40%, #0a0f1d 100%);
+    }
+    .prose img { margin: 1.25rem auto; border-radius: 1rem; }
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .container-narrow { max-width: 1100px; }
+    .btn-primary { @apply inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-emerald-500 text-white hover:bg-emerald-400 transition; }
+    .tag { @apply text-xs px-2 py-0.5 rounded-full border border-white/10; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500/40 selection:text-white">
+  <!-- HEADER / HERO -->
+  <header class="hero-bg">
+    <div class="mx-auto px-4 sm:px-6 py-10 container-narrow">
+      <div class="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-6">
+        <div>
+          <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">TurtleMe</h1>
+          <p class="mt-2 text-slate-300">22.1k Mitglieder · 502 Posts</p>
+          <p class="mt-4 max-w-2xl text-slate-300">
+            I'm a dog owner and the author behind The Beginning After the End and Soul Forged.
+            Welcome to my blog, where you can read my series as it's released, chapter by chapter!
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a href="#subscribe" class="btn-primary">
+              <i class="lucide lucide-badge-plus"></i> Upgrade to paid
+            </a>
+            <div class="flex items-center gap-3 text-slate-300">
+              <a aria-label="Instagram" class="hover:text-white" href="#"><i class="lucide lucide-instagram"></i></a>
+              <a aria-label="X" class="hover:text-white" href="#"><i class="lucide lucide-twitter"></i></a>
+              <a aria-label="Facebook" class="hover:text-white" href="#"><i class="lucide lucide-facebook"></i></a>
+              <a aria-label="TikTok" class="hover:text-white" href="#"><i class="lucide lucide-music-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="ml-auto">
+          <img src="assets/cover-illustration.svg" alt="Cover art" class="w-[380px] hidden md:block opacity-90">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV / SEARCH -->
+  <div class="sticky top-0 z-40 glass">
+    <div class="mx-auto px-4 sm:px-6 py-3 container-narrow flex items-center gap-3">
+      <a href="#" class="text-slate-200 font-semibold hover:text-white">Home</a>
+      <a href="#/about" class="text-slate-400 hover:text-white">About</a>
+      <a href="#/archive" class="text-slate-400 hover:text-white">Archive</a>
+      <div class="ml-auto relative w-64">
+        <input id="search" placeholder="Search posts…" class="w-full rounded-xl bg-slate-900/70 border border-white/10 px-4 py-2 pr-10 outline-none focus:ring-2 focus:ring-indigo-500" />
+        <i class="lucide lucide-search absolute right-3 top-2.5 text-slate-400"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main id="app" class="mx-auto px-4 sm:px-6 py-10 container-narrow"></main>
+
+  <!-- FOOTER -->
+  <footer class="mt-20 py-10 text-center text-slate-400">
+    <p>© <span id="y"></span> TurtleMe · Built for GitHub Pages · <a class="underline hover:text-white" href="https://github.com/">Source</a></p>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

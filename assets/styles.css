@@ -1,0 +1,5 @@
+/* Extra tweaks beyond Tailwind */
+.prose h2 { @apply mt-8 mb-3 text-2xl font-semibold; }
+.prose h3 { @apply mt-6 mb-2 text-xl font-semibold; }
+.prose p  { @apply my-4 text-slate-200; }
+.prose a  { @apply underline decoration-indigo-500/60 hover:text-white; }
