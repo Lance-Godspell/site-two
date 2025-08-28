@@ -3,7 +3,7 @@ const App = {
   state: {
     posts: [],
     filtered: [],
-    siteTitle: "TurtleMe — Fan Blog",
+    siteTitle: "Trikster - Blog",
   },
   async loadIndex() {
     const res = await fetch('posts/posts.json?_=' + Date.now());
