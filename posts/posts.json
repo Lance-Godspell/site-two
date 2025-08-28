@@ -21,4 +21,17 @@
     "excerpt": "See how a full long\u2011form article renders: headings, images, code blocks, and more.",
     "cover": ""
   }
+  
+  {
+    "slug": "trent",
+    "title": "Трансфер Трента в Реал Мадрид",
+    "date": "2025-08-28",
+    "tags": [
+      "writing",
+      "real madrid"
+    ],
+    "excerpt": "Мысли о Реале, Ливерпуле, Тренте и величии",
+    "cover": "assets/trent.jpg"
+  }
+  
 ]
